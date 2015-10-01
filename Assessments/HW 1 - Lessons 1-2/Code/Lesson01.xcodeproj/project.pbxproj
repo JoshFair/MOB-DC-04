@@ -12,6 +12,8 @@
 		5D06C68219D8CFFE0082F2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C68019D8CFFE0082F2DE /* Main.storyboard */; };
 		5D06C68419D8CFFE0082F2DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C68319D8CFFE0082F2DE /* Images.xcassets */; };
 		5D06C69319D8CFFE0082F2DE /* Lesson01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06C69219D8CFFE0082F2DE /* Lesson01Tests.swift */; };
+		8C2AAB601BBCC60F0081CC10 /* Josh Fair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C2AAB5F1BBCC60F0081CC10 /* Josh Fair.jpg */; settings = {ASSET_TAGS = (); }; };
+		8C2AAB631BBCC82D0081CC10 /* Diving.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C2AAB621BBCC82D0081CC10 /* Diving.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		5D06C68C19D8CFFE0082F2DE /* Lesson01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D06C69119D8CFFE0082F2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D06C69219D8CFFE0082F2DE /* Lesson01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson01Tests.swift; sourceTree = "<group>"; };
+		8C2AAB5F1BBCC60F0081CC10 /* Josh Fair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Josh Fair.jpg"; sourceTree = "<group>"; };
+		8C2AAB621BBCC82D0081CC10 /* Diving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Diving.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		5D06C67919D8CFFE0082F2DE /* Lesson01 */ = {
 			isa = PBXGroup;
 			children = (
+				8C2AAB611BBCC6170081CC10 /* Image Assets */,
 				5D06C67C19D8CFFE0082F2DE /* AppDelegate.swift */,
 				5D06C67E19D8CFFE0082F2DE /* ViewController.swift */,
 				5D06C68019D8CFFE0082F2DE /* Main.storyboard */,
@@ -107,6 +112,15 @@
 				5D06C69119D8CFFE0082F2DE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C2AAB611BBCC6170081CC10 /* Image Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8C2AAB5F1BBCC60F0081CC10 /* Josh Fair.jpg */,
+				8C2AAB621BBCC82D0081CC10 /* Diving.jpg */,
+			);
+			name = "Image Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +206,8 @@
 			files = (
 				5D06C68219D8CFFE0082F2DE /* Main.storyboard in Resources */,
 				5D06C68419D8CFFE0082F2DE /* Images.xcassets in Resources */,
+				8C2AAB631BBCC82D0081CC10 /* Diving.jpg in Resources */,
+				8C2AAB601BBCC60F0081CC10 /* Josh Fair.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
