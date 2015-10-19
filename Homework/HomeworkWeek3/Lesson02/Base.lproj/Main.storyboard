@@ -8,7 +8,6 @@
         <!--Navigation Controller-->
         <scene sceneID="t4l-vm-mkT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vIE-6a-Lma" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="LUb-Ej-wn6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xv2-nr-6ZG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -18,6 +17,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Uab-Ox-Fgh"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIE-6a-Lma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6" y="-290"/>
         </scene>
@@ -216,6 +216,9 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateButton:" destination="nKH-F5-XzW" eventType="touchUpInside" id="3nh-Hb-yE8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -235,6 +238,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="numberText" destination="UJA-B5-7Cz" id="jrt-pI-Zr8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bic-8V-fDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,6 +276,9 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BPG-Q0-b6p" eventType="touchUpInside" id="CvA-Ul-BJw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should print the xth fibonacci number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpk-q1-6qc">
                                 <rect key="frame" x="155" y="138" width="290" height="21"/>
@@ -292,6 +301,9 @@
                             <constraint firstItem="uuM-Ik-raV" firstAttribute="top" secondItem="Hpk-q1-6qc" secondAttribute="bottom" constant="21" id="scm-VI-6lk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberText" destination="Y9T-1j-GS4" id="hMy-EV-qz5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LL4-Hq-ZaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
