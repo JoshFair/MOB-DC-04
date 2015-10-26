@@ -35,3 +35,25 @@
     }
 
 */
+
+
+//Add to B
+protocol AddNameDelegate {
+    func addName(name: String)
+}
+
+var delegate: AddNameDelegate?
+
+//In B save function ->  Name Field = text field that you are going to move the data to
+delegate?.addName(nameField.text)
+
+
+//In VC A
+V
+unc addName(name: String)
+
+self.addname("What gets passed")
+
+
+
+

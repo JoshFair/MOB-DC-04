@@ -62,7 +62,8 @@ class ViewController: UIViewController {
     }
     @IBAction func FinishGameSwipe(sender: AnyObject) {
         let status: String = game.determineWinner()
-        if status == "Win" {}
+        var VCWin = self.storyboard.
+        if status == "Win" {self.presentViewController(VCWin, animated: true, completion: nil)}
         if status == "Lose" {}
         if status == "Push" {}
         
