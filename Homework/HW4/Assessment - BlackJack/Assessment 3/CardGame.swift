@@ -8,21 +8,22 @@
 
 import Foundation
 
-// protocol BlackJack {
-//    // Require a deal method
-//    // Require a first hand method
-//    func deal()
-//    func firstHand()
-//}
+ protocol BlackJack {
+    // Require a deal method
+    // Require a first hand method
+    func deal()
+    func firstHand()
+}
 
-class CardGame {
+class CardGame: BlackJack {
     var cardNumber: [Int]
     var cardName: [String]
     var cardScore: [Int]
+    var cardSuit: [String]
     var CPUScore: Int
     
-    init(cardNumber: [Int] = [], cardName: [String] = [], cardScore: [Int] = [],CPUScore: Int = 0 ){
-        self.cardNumber = cardNumber; self.cardName = cardName; self.cardScore = cardScore; self.CPUScore = CPUScore
+    init(cardNumber: [Int] = [], cardName: [String] = [], cardScore: [Int] = [],CPUScore: Int = 0, cardSuit: [String] = [] ){
+        self.cardNumber = cardNumber; self.cardName = cardName; self.cardScore = cardScore; self.CPUScore = CPUScore; self.cardSuit = cardSuit
     }
     
     //Deals a random number that represents a card - then sets that into the arrays
@@ -50,6 +51,11 @@ class CardGame {
         else { nameOfCard = "A" }
         
         self.cardName.append(nameOfCard)
+    }
+    
+    //Sets Card Suit
+    func AddCardSuit() {
+        //Not needed at the moment
     }
     
         //Sets the card score
@@ -103,6 +109,7 @@ class CardGame {
         return gameOver
     }
     
+    //Function to determine Winner when the user finishes the game
     func determineWinner() -> String {
         let cpu: Int = self.CPUScore
         let player: Int = self.sumOfCards()

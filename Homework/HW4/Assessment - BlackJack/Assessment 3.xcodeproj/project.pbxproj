@@ -16,6 +16,9 @@
 		7CD52BD21A72E21C00176059 /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD11A72E21C00176059 /* CardGame.swift */; };
 		7CD52BD41A72E2C000176059 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD31A72E2C000176059 /* Player.swift */; };
 		7CD52BD81A72E67F00176059 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD52BD71A72E67F00176059 /* SecondViewController.swift */; };
+		D5EB651E1BDEF5DF00BCEDA6 /* VCWinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EB651D1BDEF5DE00BCEDA6 /* VCWinController.swift */; settings = {ASSET_TAGS = (); }; };
+		D5EB65201BDEF67500BCEDA6 /* VCLoseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EB651F1BDEF67500BCEDA6 /* VCLoseController.swift */; settings = {ASSET_TAGS = (); }; };
+		D5EB65221BDEF6CC00BCEDA6 /* VCPushController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EB65211BDEF6CC00BCEDA6 /* VCPushController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		7CD52BD71A72E67F00176059 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D5EB64DD1BD8732100BCEDA6 /* BlackJack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BlackJack.playground; sourceTree = "<group>"; };
 		D5EB64E01BDD1AB400BCEDA6 /* BlackJack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BlackJack.playground; sourceTree = "<group>"; };
+		D5EB651D1BDEF5DE00BCEDA6 /* VCWinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCWinController.swift; sourceTree = "<group>"; };
+		D5EB651F1BDEF67500BCEDA6 /* VCLoseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLoseController.swift; sourceTree = "<group>"; };
+		D5EB65211BDEF6CC00BCEDA6 /* VCPushController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCPushController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 				7CD52BD31A72E2C000176059 /* Player.swift */,
 				7CD52BD71A72E67F00176059 /* SecondViewController.swift */,
 				D5EB64DD1BD8732100BCEDA6 /* BlackJack.playground */,
+				D5EB651D1BDEF5DE00BCEDA6 /* VCWinController.swift */,
+				D5EB651F1BDEF67500BCEDA6 /* VCLoseController.swift */,
+				D5EB65211BDEF6CC00BCEDA6 /* VCPushController.swift */,
 			);
 			path = "Assessment 3";
 			sourceTree = "<group>";
@@ -227,9 +236,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD52BD41A72E2C000176059 /* Player.swift in Sources */,
+				D5EB65201BDEF67500BCEDA6 /* VCLoseController.swift in Sources */,
+				D5EB651E1BDEF5DF00BCEDA6 /* VCWinController.swift in Sources */,
 				7C8628631A71F5C0004AAD02 /* ViewController.swift in Sources */,
 				7C8628611A71F5C0004AAD02 /* AppDelegate.swift in Sources */,
 				7CD52BD81A72E67F00176059 /* SecondViewController.swift in Sources */,
+				D5EB65221BDEF6CC00BCEDA6 /* VCPushController.swift in Sources */,
 				7CD52BD21A72E21C00176059 /* CardGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

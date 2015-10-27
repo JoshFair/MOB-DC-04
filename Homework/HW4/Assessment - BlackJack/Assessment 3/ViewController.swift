@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerBackgroundCard: UIImageView!
     @IBOutlet weak var cpuBackgroundCard: UIImageView!
     
-    //Creates instance of blackjack
+    //Creates instance of blackjack cardgame
     var game = CardGame()
     
     func updateScreen() {
@@ -56,16 +56,19 @@ class ViewController: UIViewController {
     @IBAction func DoubetapDeal(sender: AnyObject) {
         game.deal()
         self.updateScreen()
-        if game.determineIfPlayerBusted() == true {
+        let VCLose = self.storyboard?.instantiateViewControllerWithIdentifier("VCLose") as! VCLoseController
+        if game.determineIfPlayerBusted() == true { self.presentViewController(VCLose, animated: true, completion: nil)
         //Display Modal that the player lost
         }
     }
     @IBAction func FinishGameSwipe(sender: AnyObject) {
         let status: String = game.determineWinner()
-        var VCWin = self.storyboard.
+        let VCWin = self.storyboard?.instantiateViewControllerWithIdentifier("VCWin") as! VCWinController
+        let VCLose = self.storyboard?.instantiateViewControllerWithIdentifier("VCLose") as! VCLoseController
+        let VCPush = self.storyboard?.instantiateViewControllerWithIdentifier("VCPush") as! VCPushController
         if status == "Win" {self.presentViewController(VCWin, animated: true, completion: nil)}
-        if status == "Lose" {}
-        if status == "Push" {}
+        if status == "Lose" {self.presentViewController(VCLose, animated: true, completion: nil)}
+        if status == "Push" {self.presentViewController(VCPush, animated: true, completion: nil)}
         
     }
 
