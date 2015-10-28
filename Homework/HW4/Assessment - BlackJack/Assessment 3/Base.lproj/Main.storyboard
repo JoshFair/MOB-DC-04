@@ -25,8 +25,8 @@
                                     <rect key="frame" x="94" y="415" width="213" height="100"/>
                                 </variation>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="aOV-4b-BN5" appends="YES" id="bwK-PH-o7N"/>
-                                    <outletCollection property="gestureRecognizers" destination="7eM-Oc-SSy" appends="YES" id="LtD-Mg-gso"/>
+                                    <outletCollection property="gestureRecognizers" destination="25g-4K-skb" appends="YES" id="Qcr-3m-EHY"/>
+                                    <outletCollection property="gestureRecognizers" destination="ry6-fs-Xrt" appends="YES" id="xLE-6n-ilZ"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlackJack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBz-Tp-YFE">
@@ -101,24 +101,6 @@
                                     <rect key="frame" x="50" y="367" width="38" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvw-xU-I3P">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="18" y="329" width="162" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv2-Hs-Xrs">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="226" y="329" width="162" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uES-mR-dfE">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -137,15 +119,6 @@
                                     <rect key="frame" x="109" y="367" width="48" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBr-LU-i6a">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="324" y="367" width="50" height="21"/>
-                                </variation>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlayingCard" translatesAutoresizingMaskIntoConstraints="NO" id="nCn-S0-7mj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -158,6 +131,33 @@
                                     <rect key="frame" x="24" y="202" width="77" height="128"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fA2-bR-xi3">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="231" y="338" width="164" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLY-PZ-S3r">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="306" y="367" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvw-xU-I3P">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="338" width="162" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -173,13 +173,13 @@
                                 <exclude reference="6FE-kI-Zqy"/>
                                 <exclude reference="FZN-KB-5Z8"/>
                                 <exclude reference="AJc-0n-sMT"/>
-                                <exclude reference="hvw-xU-I3P"/>
-                                <exclude reference="Yv2-Hs-Xrs"/>
                                 <exclude reference="uES-mR-dfE"/>
                                 <exclude reference="YMp-Fb-KTB"/>
-                                <exclude reference="JBr-LU-i6a"/>
                                 <exclude reference="nCn-S0-7mj"/>
                                 <exclude reference="qqz-sO-4wI"/>
+                                <exclude reference="fA2-bR-xi3"/>
+                                <exclude reference="xLY-PZ-S3r"/>
+                                <exclude reference="hvw-xU-I3P"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -194,24 +194,21 @@
                                 <include reference="6FE-kI-Zqy"/>
                                 <include reference="FZN-KB-5Z8"/>
                                 <include reference="AJc-0n-sMT"/>
-                                <include reference="hvw-xU-I3P"/>
-                                <include reference="Yv2-Hs-Xrs"/>
                                 <include reference="uES-mR-dfE"/>
                                 <include reference="YMp-Fb-KTB"/>
-                                <include reference="JBr-LU-i6a"/>
                                 <include reference="nCn-S0-7mj"/>
                                 <include reference="qqz-sO-4wI"/>
+                                <include reference="fA2-bR-xi3"/>
+                                <include reference="xLY-PZ-S3r"/>
+                                <include reference="hvw-xU-I3P"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="7eM-Oc-SSy" appends="YES" id="7f3-as-Xi3"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="kye-4f-Ber"/>
                     <connections>
+                        <outlet property="CPUCardList" destination="fA2-bR-xi3" id="xVw-n6-Us9"/>
+                        <outlet property="CPUCardScoreTotal" destination="xLY-PZ-S3r" id="Mu6-z2-jJI"/>
                         <outlet property="cpuBackgroundCard" destination="nCn-S0-7mj" id="bOD-FU-2dx"/>
-                        <outlet property="cpuCards" destination="Yv2-Hs-Xrs" id="qHW-fk-a1X"/>
-                        <outlet property="cpuScoreLabel" destination="JBr-LU-i6a" id="WaC-NU-iz2"/>
                         <outlet property="gameLabel" destination="xBz-Tp-YFE" id="sjo-FX-geY"/>
                         <outlet property="playerBackgroundCard" destination="nCn-S0-7mj" id="Bnf-sF-vK2"/>
                         <outlet property="playerCards" destination="hvw-xU-I3P" id="QAn-ZO-AES"/>
@@ -220,14 +217,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="aOV-4b-BN5" userLabel="DoubleTapDeal">
+                <tapGestureRecognizer id="25g-4K-skb">
                     <connections>
-                        <action selector="DoubetapDeal:" destination="vXZ-lx-hvc" id="wqW-Zz-cBI"/>
+                        <action selector="DoubleTap:" destination="vXZ-lx-hvc" id="THg-in-5n2"/>
                     </connections>
                 </tapGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="7eM-Oc-SSy">
+                <swipeGestureRecognizer direction="left" id="ry6-fs-Xrt">
                     <connections>
-                        <action selector="FinishGameSwipe:" destination="vXZ-lx-hvc" id="WC9-bj-hqN"/>
+                        <action selector="gameDoneSwipe:" destination="vXZ-lx-hvc" id="f19-pl-hyb"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -242,6 +239,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5m4-ST-u62"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XiV-dn-FQU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BE-nA-UmW">
@@ -303,6 +301,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dsA-cy-Kop"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hsX-TQ-WXI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nme-Zn-bZq">
@@ -364,6 +363,7 @@
                         <viewControllerLayoutGuide type="bottom" id="teR-yW-10C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yws-DW-d9i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHz-Ei-tuu">

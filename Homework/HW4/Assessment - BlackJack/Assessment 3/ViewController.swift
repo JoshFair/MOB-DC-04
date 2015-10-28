@@ -10,18 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var gameLabel: UILabel!
+    //@IBOutlet weak var CPUCards: UILabel!
     @IBOutlet weak var playerScoreLabel: UILabel!
+    //@IBOutlet weak var CPUCardNames: UILabel!
     @IBOutlet weak var cpuScoreLabel: UILabel!
     @IBOutlet weak var playerCards: UILabel!
-    @IBOutlet weak var cpuCards: UILabel!
     @IBOutlet weak var playerBackgroundCard: UIImageView!
     @IBOutlet weak var cpuBackgroundCard: UIImageView!
+    @IBOutlet weak var CPUCardScoreTotal: UILabel!
+    @IBOutlet weak var CPUCardList: UILabel!
     
     //Creates instance of blackjack cardgame
     var game = CardGame()
     
     func updateScreen() {
-        self.cpuScoreLabel.text = String(game.CPUScore)
+        self.CPUCardScoreTotal.text = String(game.sumOfCPUCards())
+        self.CPUCardList.text = game.textOfCPUCards()
         self.playerScoreLabel.text = String(game.sumOfCards())
         self.playerCards.text = game.textOfCards()
     }
@@ -42,6 +46,8 @@ class ViewController: UIViewController {
     // Bonus 3: When handing out cards, display the actual value to the user. If the card is an Ace, let the user select either 1 or 11.
     
     @IBOutlet weak var redBox: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //lets the game start
@@ -53,24 +59,36 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func DoubetapDeal(sender: AnyObject) {
+    @IBAction func DoubleTap(sender: AnyObject) {
         game.deal()
         self.updateScreen()
         let VCLose = self.storyboard?.instantiateViewControllerWithIdentifier("VCLose") as! VCLoseController
         if game.determineIfPlayerBusted() == true { self.presentViewController(VCLose, animated: true, completion: nil)
-        //Display Modal that the player lost
+            //Display Modal that the player lost
         }
     }
-    @IBAction func FinishGameSwipe(sender: AnyObject) {
-        let status: String = game.determineWinner()
-        let VCWin = self.storyboard?.instantiateViewControllerWithIdentifier("VCWin") as! VCWinController
-        let VCLose = self.storyboard?.instantiateViewControllerWithIdentifier("VCLose") as! VCLoseController
-        let VCPush = self.storyboard?.instantiateViewControllerWithIdentifier("VCPush") as! VCPushController
-        if status == "Win" {self.presentViewController(VCWin, animated: true, completion: nil)}
-        if status == "Lose" {self.presentViewController(VCLose, animated: true, completion: nil)}
-        if status == "Push" {self.presentViewController(VCPush, animated: true, completion: nil)}
+    
+    @IBAction func gameDoneSwipe(sender: AnyObject) {
+        game.CPUPlay()
+        self.updateScreen()
+        let seconds = 1.3
+        let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+        let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        
+        dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+            // here code perfomed with delay
+            let status: String = self.game.determineWinner()
+            let VCWin = self.storyboard?.instantiateViewControllerWithIdentifier("VCWin") as! VCWinController
+            let VCLose = self.storyboard?.instantiateViewControllerWithIdentifier("VCLose") as! VCLoseController
+            let VCPush = self.storyboard?.instantiateViewControllerWithIdentifier("VCPush") as! VCPushController
+            if status == "Win" {self.presentViewController(VCWin, animated: true, completion: nil)}
+            if status == "Lose" {self.presentViewController(VCLose, animated: true, completion: nil)}
+            if status == "Push" {self.presentViewController(VCPush, animated: true, completion: nil)}
+        })
+        
         
     }
+
 
 }
 

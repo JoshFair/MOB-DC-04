@@ -28,6 +28,20 @@ class AddViewController: UIViewController {
         // In the screenTapped method, end editing on the view and the keyboard will disappear
         let tapGesture = UITapGestureRecognizer(target: self, action: "screenTapped")
         self.view.addGestureRecognizer(tapGesture)
+    
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "keyBoardShow:",
+            name: UIKeyboardDidShowNotification,
+            object: nil)
+    
+    }
+    
+    // Remember to pass NSNotification as a paremeter in the methods that execute after a notification is posted
+    func keyBoardShow(notification: NSNotification) {
+        //Turn enter point blue
+        print("Function")
+        self.nameField.backgroundColor = UIColor.blueColor()
+        
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -42,6 +56,9 @@ class AddViewController: UIViewController {
     func screenTapped() {
         view.endEditing(true)
     }
+    
+
+
     
     @IBAction func save(sender: UIButton) {
         //ADDED THIS LINE WITH REFERENCE THIS WHEN THE SAVE BUTTON IS PRESSED - IT WILL PASS THE TEXT
