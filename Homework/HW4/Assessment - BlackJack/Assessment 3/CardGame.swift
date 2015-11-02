@@ -67,10 +67,13 @@ class CardGame: BlackJack {
     
     // deals the first two card for both the CPU and the player
     func firstHand() {
+        self.cardName = []
+        self.cardScore = []
+        self.CPUName = []
+        self.CPUScore = []
         
         //First Card
         self.deal()
-        
         //Second Card
         self.deal()
         
@@ -194,6 +197,17 @@ class CardGame: BlackJack {
         else if (cpu > player) { game = "Lose" }
         else {game = "Win" }
         return game
+    }
+    
+    //Function returns the game variables back to a pre-game state    
+    func clearGame() {
+        self.cardNumber = []
+        self.cardName = ["?"]
+        self.cardScore = [0]
+        self.cardSuit = []
+        self.CPUScore  = [0]
+        self.CPUName  = ["?"]
+        
     }
     
 }

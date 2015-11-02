@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="94" y="415" width="213" height="100"/>
+                                    <rect key="frame" x="94" y="465" width="213" height="100"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="25g-4K-skb" appends="YES" id="Qcr-3m-EHY"/>
@@ -44,7 +44,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="550" width="368" height="30"/>
+                                    <rect key="frame" x="16" y="562" width="368" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="8IH-ar-xyl" kind="show" id="d9H-Pi-dWC"/>
@@ -158,6 +158,39 @@
                                     <rect key="frame" x="20" y="338" width="162" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8s7-Kg-LLW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="492" width="39" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYx-91-Tx8">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="242" y="436" width="68" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coins" translatesAutoresizingMaskIntoConstraints="NO" id="oa6-v4-DOV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="516" width="46" height="49"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWr-xk-QXU">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="206" y="436" width="75" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -180,6 +213,10 @@
                                 <exclude reference="fA2-bR-xi3"/>
                                 <exclude reference="xLY-PZ-S3r"/>
                                 <exclude reference="hvw-xU-I3P"/>
+                                <exclude reference="8s7-Kg-LLW"/>
+                                <exclude reference="KYx-91-Tx8"/>
+                                <exclude reference="oa6-v4-DOV"/>
+                                <exclude reference="uWr-xk-QXU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -201,6 +238,10 @@
                                 <include reference="fA2-bR-xi3"/>
                                 <include reference="xLY-PZ-S3r"/>
                                 <include reference="hvw-xU-I3P"/>
+                                <include reference="8s7-Kg-LLW"/>
+                                <include reference="KYx-91-Tx8"/>
+                                <include reference="oa6-v4-DOV"/>
+                                <include reference="uWr-xk-QXU"/>
                             </mask>
                         </variation>
                     </view>
@@ -217,7 +258,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="25g-4K-skb">
+                <tapGestureRecognizer numberOfTapsRequired="2" id="25g-4K-skb">
                     <connections>
                         <action selector="DoubleTap:" destination="vXZ-lx-hvc" id="THg-in-5n2"/>
                     </connections>
@@ -249,7 +290,7 @@
                                     <rect key="frame" x="0.0" y="369" width="400" height="61"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="showDetail" id="gq8-58-ucd"/>
+                                    <action selector="playAgain:" destination="qb0-u7-JYQ" eventType="touchUpInside" id="b9a-Ws-j2K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX8-up-KSt">
@@ -261,29 +302,26 @@
                                     <rect key="frame" x="0.0" y="145" width="400" height="101"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Confetti Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEX-kp-VJU">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coins" translatesAutoresizingMaskIntoConstraints="NO" id="LQa-ec-jba">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="105" y="66" width="191" height="21"/>
+                                    <rect key="frame" x="145" y="20" width="111" height="60"/>
                                 </variation>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="7BE-nA-UmW"/>
                                 <exclude reference="TX8-up-KSt"/>
-                                <exclude reference="kEX-kp-VJU"/>
+                                <exclude reference="LQa-ec-jba"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="7BE-nA-UmW"/>
                                 <include reference="TX8-up-KSt"/>
-                                <include reference="kEX-kp-VJU"/>
+                                <include reference="LQa-ec-jba"/>
                             </mask>
                         </variation>
                     </view>
@@ -474,9 +512,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Coins" width="256" height="256"/>
         <image name="PlayingCard" width="755" height="1057"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lBm-gh-aRy"/>
+        <segue reference="Ajy-Id-3eA"/>
     </inferredMetricsTieBreakers>
 </document>

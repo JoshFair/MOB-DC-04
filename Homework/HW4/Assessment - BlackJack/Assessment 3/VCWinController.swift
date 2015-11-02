@@ -22,6 +22,9 @@ class VCWinController: UIViewController {
     }
     
 
+    @IBAction func playAgain(sender: AnyObject) {
+       self.dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -84,6 +84,7 @@ class ViewController: UIViewController {
             if status == "Win" {self.presentViewController(VCWin, animated: true, completion: nil)}
             if status == "Lose" {self.presentViewController(VCLose, animated: true, completion: nil)}
             if status == "Push" {self.presentViewController(VCPush, animated: true, completion: nil)}
+            self.game.clearGame()
         })
         
         

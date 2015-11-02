@@ -164,6 +164,11 @@ var test6: [String] = Game.cardName
 Game.textOfCards(test6)
 Game.cardScore
 
+func asdf (notification: NSNotification) {
+    print( "Test")
+    
+}
+
 
 
 
