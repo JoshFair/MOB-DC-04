@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -27,9 +26,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="42" y="44" width="12" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,9 +65,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="32" y="44" width="48" height="30"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,9 +149,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="43" y="44" width="21" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -198,9 +188,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="43" y="36" width="22" height="31"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -240,9 +227,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="43" y="26" width="32" height="38"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -282,9 +266,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="43" y="44" width="19" height="25"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -324,9 +305,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="43" y="43" width="11" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -366,9 +344,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="44" y="43" width="8" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -408,9 +383,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="92" y="44" width="11" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -450,9 +422,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="42" y="44" width="39" height="28"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -492,9 +461,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="42" y="44" width="17" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -534,9 +500,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="42" y="44" width="11" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -576,9 +539,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="42" y="33" width="23" height="31"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -657,9 +617,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="45" y="44" width="6" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5244154081831941" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -699,9 +656,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="42" y="44" width="12" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.52441540819999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -741,9 +695,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="44" y="44" width="8" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.52441540819999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -783,9 +734,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="42" y="43" width="11" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.52441540819999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -825,9 +773,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="43" y="44" width="11" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.52441540819999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -945,6 +890,7 @@
                             <constraint firstItem="cOd-Wb-31h" firstAttribute="top" secondItem="Hhr-ze-kPE" secondAttribute="bottom" constant="8" id="GIg-QJ-qXo">
                                 <variation key="heightClass=regular-widthClass=compact" constant="3"/>
                             </constraint>
+                            <constraint firstItem="w7N-Ml-siX" firstAttribute="width" secondItem="MGb-Uz-Ww4" secondAttribute="width" id="Hq5-wi-baJ"/>
                             <constraint firstItem="xh4-Ae-c7X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="Jz2-ml-6dn">
                                 <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                             </constraint>
@@ -976,6 +922,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="3"/>
                             </constraint>
                             <constraint firstItem="gzV-BA-hDg" firstAttribute="width" secondItem="MGb-Uz-Ww4" secondAttribute="width" id="R63-mc-UXu"/>
+                            <constraint firstItem="f9t-Ao-Q6k" firstAttribute="width" secondItem="MGb-Uz-Ww4" secondAttribute="width" id="RJF-vU-Fc8"/>
                             <constraint firstItem="cOd-Wb-31h" firstAttribute="leading" secondItem="k68-6j-CBP" secondAttribute="trailing" constant="14" id="RJI-QY-Nz5">
                                 <variation key="heightClass=regular-widthClass=compact" constant="3"/>
                             </constraint>
@@ -1201,6 +1148,7 @@
                                 <exclude reference="0ur-AS-y1h"/>
                                 <exclude reference="3RU-DY-4Kf"/>
                                 <exclude reference="8Iv-eV-4kF"/>
+                                <exclude reference="RJF-vU-Fc8"/>
                                 <exclude reference="cRS-eS-qaE"/>
                                 <exclude reference="ps7-yq-AEv"/>
                                 <exclude reference="uH2-Og-toK"/>
@@ -1233,6 +1181,7 @@
                                 <exclude reference="UyO-8n-wUR"/>
                                 <exclude reference="q05-zG-JRh"/>
                                 <exclude reference="DH6-x2-Nwb"/>
+                                <exclude reference="Hq5-wi-baJ"/>
                                 <exclude reference="Mek-Re-RSg"/>
                                 <exclude reference="Uju-oB-yQY"/>
                                 <exclude reference="Zvs-mu-Lal"/>
@@ -1334,6 +1283,7 @@
                                 <include reference="0ur-AS-y1h"/>
                                 <include reference="3RU-DY-4Kf"/>
                                 <include reference="8Iv-eV-4kF"/>
+                                <include reference="RJF-vU-Fc8"/>
                                 <include reference="cRS-eS-qaE"/>
                                 <exclude reference="ps7-yq-AEv"/>
                                 <exclude reference="uH2-Og-toK"/>
@@ -1366,13 +1316,14 @@
                                 <include reference="UyO-8n-wUR"/>
                                 <include reference="q05-zG-JRh"/>
                                 <include reference="DH6-x2-Nwb"/>
-                                <include reference="Mek-Re-RSg"/>
-                                <include reference="Uju-oB-yQY"/>
+                                <include reference="Hq5-wi-baJ"/>
+                                <exclude reference="Mek-Re-RSg"/>
+                                <exclude reference="Uju-oB-yQY"/>
                                 <include reference="Zvs-mu-Lal"/>
                                 <include reference="Fg4-D1-0yx"/>
                                 <exclude reference="Jz2-ml-6dn"/>
                                 <include reference="ToR-eo-37P"/>
-                                <include reference="Xol-g5-GBp"/>
+                                <exclude reference="Xol-g5-GBp"/>
                                 <exclude reference="cvQ-mN-CU5"/>
                                 <include reference="eHQ-pj-bPa"/>
                                 <exclude reference="sTM-zW-C94"/>
@@ -1479,7 +1430,11 @@
                         <action selector="equalTapped:" destination="BYZ-38-t0r" id="Dyc-GD-e4t"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="2Bv-2l-U9K"/>
+                <tapGestureRecognizer id="2Bv-2l-U9K">
+                    <connections>
+                        <action selector="percentTapped2:" destination="BYZ-38-t0r" id="3Z2-Xh-4Nb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="247" y="242"/>
         </scene>

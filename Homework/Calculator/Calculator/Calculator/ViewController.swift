@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         self.updateScreen()
     }
     
-    @IBAction func percentageTapped(sender: AnyObject) {
+    @IBAction func percentTapped2(sender: AnyObject) {
         calc.percentageButtonPressed()
         self.updateScreen()
     }
@@ -109,23 +109,21 @@ class ViewController: UIViewController {
     @IBAction func equalTapped(sender: AnyObject) {
         calc.equalButtonPressed()
         self.updateScreen()
-        self.updateScreen()
     }
     
     func updateScreen(){
         self.displayLabel.text = calc.displayedValue
         
-        if (calc.multiply && calc.calcInProgress) {self.multiplyView.backgroundColor = UIColor.blueColor()}
-        else {self.multiplyView.backgroundColor = self.equalView.backgroundColor}
+        if (calc.multiply && calc.calcInProgress) {self.multiplyView.layer.borderWidth = 5}
+        else {self.multiplyView.layer.borderWidth = self.equalView.layer.borderWidth}
         
-        if (calc.divide && calc.calcInProgress) {self.divideView.backgroundColor = UIColor.blueColor()}
-        else {self.divideView.backgroundColor = self.equalView.backgroundColor}
+        if (calc.divide && calc.calcInProgress) { self.divideView.layer.borderWidth = 5 }       else {self.divideView.layer.borderWidth = self.equalView.layer.borderWidth}
         
-        if (calc.add && calc.calcInProgress) {self.addView.backgroundColor = UIColor.blueColor()}
-        else {self.addView.backgroundColor = self.equalView.backgroundColor}
+        if (calc.add && calc.calcInProgress) {self.addView.layer.borderWidth = 5}
+        else {self.addView.layer.borderWidth = self.equalView.layer.borderWidth}
         
-        if (calc.subtract && calc.calcInProgress) {self.subtractView.backgroundColor = UIColor.blueColor()}
-        else {self.subtractView.backgroundColor = self.equalView.backgroundColor}
+        if (calc.subtract && calc.calcInProgress) {self.subtractView.layer.borderWidth = 5}
+        else {self.subtractView.layer.borderWidth = self.equalView.layer.borderWidth}
         
     }
 }

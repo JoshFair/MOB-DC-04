@@ -35,14 +35,12 @@ class Calculate {
         var term1: Float = self.savedValue
         var term2: Float = Float(self.displayedValue)!
         var answer: Float = Float(self.displayedValue)!
-        
-        
-        
+
+        //Assists with the in calc progress
         if (self.firstCalcCompleted) {
             term1 = Float(self.displayedValue)!
             term2 = self.computeValue
         }
-        
         
             if (divide ) {
                 answer = term1 / term2
@@ -66,19 +64,14 @@ class Calculate {
         
         //sets answer to the displayed value
             self.displayedValue = String(answer)
-        print("display: \(self.displayedValue) " )
-        print("savedValue: \(self.savedValue) ")
-        print("CalcInProgress: \(self.calcInProgress) ")
-        print("Multiply: \(multiply) ")
-        print("Add: \(add) ")
-        print("Subtract: \(subtract) ")
-        print("Divide: \(divide) ")
+        
         print("Term1: \(term1) ")
         print("Term2: \(term2) ")
-        
+        errorCheck()
     }
     
     func equalButtonPressed() {
+
         self.computeAnswer()
         self.calcInProgress = false
     }
@@ -86,7 +79,8 @@ class Calculate {
     func divideButtonPressed() {
         // Will change the color of the buttons on the UI
         
-        self.computeAnswer()
+        if self.firstCalcCompleted == false { self.computeAnswer() }
+
         self.savedValue = Float(self.displayedValue)!
         
         self.divide = true
@@ -100,7 +94,8 @@ class Calculate {
     func multiplyButtonPressed() {
         // Will change the color of the buttons on the UI
         
-        self.computeAnswer()
+        if self.firstCalcCompleted == false { self.computeAnswer() }
+        
         self.savedValue = Float(self.displayedValue)!
         
         self.divide = false
@@ -114,7 +109,7 @@ class Calculate {
     func subtractButtonPressed() {
         // Will change the color of the buttons on the UI
         
-        self.computeAnswer()
+        if self.firstCalcCompleted == false { self.computeAnswer()}
         self.savedValue = Float(self.displayedValue)!
         
         self.divide = false
@@ -128,7 +123,7 @@ class Calculate {
     func addButtonPressed() {
         // Will change the color of the buttons on the UI
         
-        self.computeAnswer()
+        if (self.firstCalcCompleted == false) { self.computeAnswer()}
         self.savedValue = Float(self.displayedValue)!
         
         self.divide = false
@@ -158,10 +153,13 @@ class Calculate {
         }
         
         //clears out the calcCache no matter what step
-        self.displayedValue = "0"
+        self.savedValue = Float(self.displayedValue)!
         self.firstCalcCompleted = false
+        self.displayedValue = "0"
+        
+        //self.firstCalcCompleted = false
 
-
+        errorCheck()
     }
     
     //Turns the number negative after the button is pressed (I dont the the UX of negative with zeros so I didnt include)
@@ -189,7 +187,7 @@ class Calculate {
         self.displayedValue = (self.displayedValue + input)}
         self.firstCalcCompleted = false
 
-        print("CalcInProgress: \(self.calcInProgress) ")
+        errorCheck()
     }
     
     //Period Button Pressed : Checks if period has just been pressed, if
@@ -207,7 +205,14 @@ class Calculate {
         }
     }
    
-    
+    func errorCheck(){
+        print("display: \(self.displayedValue) " )
+        print("savedValue: \(self.savedValue) ")
+        print("firstCalcCompleted: \(self.firstCalcCompleted) ")
+        print("computeValue: \(self.computeValue) ")
+
+
+    }
 }
 
 
