@@ -211,7 +211,6 @@ class Calculate {
         print("firstCalcCompleted: \(self.firstCalcCompleted) ")
         print("computeValue: \(self.computeValue) ")
 
-
     }
 }
 

@@ -11,4 +11,11 @@ switch animal {
     
 }
 
-enum GA co
+ var currentTheme = NSUserDefaults.standardUserDefaults().objectForKey("theme")
+
+
+
+
+//Need to practive notifications, delegation, and themes
+
+ss

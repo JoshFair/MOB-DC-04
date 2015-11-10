@@ -44,6 +44,7 @@
                     <connections>
                         <outlet property="darkButton" destination="aTC-96-6u6" id="fOR-Xs-0SX"/>
                         <outlet property="helloLabel" destination="IY0-nd-Bvj" id="HpW-g7-NsI"/>
+                        <outlet property="lighLabel" destination="DyD-eb-lSp" id="yPU-r7-l6A"/>
                         <outlet property="lightButton" destination="DyD-eb-lSp" id="MGg-fy-lr9"/>
                     </connections>
                 </viewController>

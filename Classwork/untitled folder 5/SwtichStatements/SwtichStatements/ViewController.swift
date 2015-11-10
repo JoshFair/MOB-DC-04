@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var helloLabel: UILabel!
     
+    @IBOutlet weak var lighLabel: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().setObject("light", forKey: "theme")
         
         var currentTheme = NSUserDefaults.standardUserDefaults().objectForKey("theme")
+        
+        userDefaultsLight()
     }
     
 
@@ -31,7 +34,21 @@ class ViewController: UIViewController {
     
 
     @IBAction func darkButton(sender: AnyObject) {
+        
     }
     @IBOutlet weak var lightButton: UIButton!
+
+
+
+    func userDefaultsLight(theme: String) {
+        if theme == nil {
+            view.backgroundColor = UIColor.blackColor()
+            self.helloLabel.backgroundColor = UIColor.whiteColor() }
+        else {
+            view.backgroundColor  = UIColor.whiteColor()
+            self.helloLabel.backgroundColor = UIColor.blackColor()
+        }
+    }
+
 }
 
