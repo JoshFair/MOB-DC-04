@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bRG-bI-Scv">
+                                <rect key="frame" x="81" y="47" width="413" height="241"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkA-Me-NlQ">
+                                <rect key="frame" x="124" y="373" width="161" height="30"/>
+                                <state key="normal" title="Get Address (Geocode)"/>
+                                <connections>
+                                    <action selector="getLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DkU-SA-i3K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-Zw-riX">
+                                <rect key="frame" x="170" y="445" width="68" height="30"/>
+                                <state key="normal" title="Find Food"/>
+                                <connections>
+                                    <action selector="findFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ccd-zG-wFY"/>
+                                    <action selector="getLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vub-Wf-mUw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-Vr-a5G">
+                                <rect key="frame" x="9" y="316" width="390" height="30"/>
+                                <state key="normal" title="Show Location">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCurrentLocationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iDG-h5-4pq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rOr-Vr-a5G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="47u-9T-zyr"/>
+                            <constraint firstItem="MkA-Me-NlQ" firstAttribute="top" secondItem="rOr-Vr-a5G" secondAttribute="bottom" constant="17" id="5FL-Bs-DAz"/>
+                            <constraint firstItem="rOr-Vr-a5G" firstAttribute="top" secondItem="bRG-bI-Scv" secondAttribute="bottom" constant="31" id="BL3-rO-Bg8"/>
+                            <constraint firstItem="MkA-Me-NlQ" firstAttribute="top" secondItem="rOr-Vr-a5G" secondAttribute="bottom" constant="17" id="PFB-Et-1WO"/>
+                            <constraint firstItem="rOr-Vr-a5G" firstAttribute="top" secondItem="bRG-bI-Scv" secondAttribute="bottom" constant="31" id="PJF-2A-BsU"/>
+                            <constraint firstItem="rOr-Vr-a5G" firstAttribute="centerY" secondItem="bRG-bI-Scv" secondAttribute="centerY" id="cEd-8h-lJM"/>
+                            <constraint firstItem="MkA-Me-NlQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uF2-ge-DD3"/>
+                            <constraint firstItem="MkA-Me-NlQ" firstAttribute="centerY" secondItem="bRG-bI-Scv" secondAttribute="centerY" id="ydM-N2-LJg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="47u-9T-zyr"/>
+                                <exclude reference="BL3-rO-Bg8"/>
+                                <exclude reference="PJF-2A-BsU"/>
+                                <exclude reference="cEd-8h-lJM"/>
+                                <exclude reference="5FL-Bs-DAz"/>
+                                <exclude reference="PFB-Et-1WO"/>
+                                <exclude reference="uF2-ge-DD3"/>
+                                <exclude reference="ydM-N2-LJg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="bRG-bI-Scv" id="7bi-WB-7eB"/>
+                        <outlet property="showCurrentLocation" destination="rOr-Vr-a5G" id="XlL-oT-TP9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="402"/>
+        </scene>
+    </scenes>
+</document>
