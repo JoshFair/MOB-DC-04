@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A263A93A6A4D75DCE89264F7 /* Pods_TablePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6064970C36FB2829FBEE3F /* Pods_TablePay.framework */; };
+		D5B2C00F1C28CCC4002705FD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C00E1C28CCC4002705FD /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		D5B2C0111C28CCCF002705FD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0101C28CCCF002705FD /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		D5B2C0131C28CD61002705FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0121C28CD61002705FD /* SystemConfiguration.framework */; };
+		D5B2C0151C28CD6A002705FD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0141C28CD6A002705FD /* StoreKit.framework */; };
+		D5B2C0171C28CD73002705FD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0161C28CD73002705FD /* Security.framework */; };
+		D5B2C0191C28CD83002705FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0181C28CD83002705FD /* QuartzCore.framework */; };
+		D5B2C01B1C28CD94002705FD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C01A1C28CD94002705FD /* MobileCoreServices.framework */; };
+		D5B2C01D1C28CDDB002705FD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C01C1C28CDDB002705FD /* libz.tbd */; };
+		D5B2C01F1C28CDE6002705FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C01E1C28CDE5002705FD /* AudioToolbox.framework */; };
+		D5B2C0211C28CDF0002705FD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0201C28CDF0002705FD /* CFNetwork.framework */; };
+		D5B2C0231C28CDFB002705FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0221C28CDFB002705FD /* CoreGraphics.framework */; };
+		D5B2C0251C28CE0B002705FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0241C28CE0B002705FD /* CoreLocation.framework */; };
+		D5B2C0271C28CE24002705FD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2C0261C28CE24002705FD /* libsqlite3.tbd */; };
+		D5F8478E1C1126C500E1CFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F8478D1C1126C500E1CFCA /* AppDelegate.swift */; };
+		D5F847901C1126C500E1CFCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F8478F1C1126C500E1CFCA /* ViewController.swift */; };
+		D5F847931C1126C500E1CFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F847911C1126C500E1CFCA /* Main.storyboard */; };
+		D5F847951C1126C500E1CFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F847941C1126C500E1CFCA /* Assets.xcassets */; };
+		D5F847981C1126C500E1CFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F847961C1126C500E1CFCA /* LaunchScreen.storyboard */; };
+		D5F847A11C11349700E1CFCA /* Baseball copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D5F847A01C11349700E1CFCA /* Baseball copy.png */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D6064970C36FB2829FBEE3F /* Pods_TablePay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TablePay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA3273FC5C948D651BA696C /* Pods-TablePay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablePay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TablePay/Pods-TablePay.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B2C00E1C28CCC4002705FD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = TablePay/Parse.framework; sourceTree = "<group>"; };
+		D5B2C0101C28CCCF002705FD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = TablePay/Bolts.framework; sourceTree = "<group>"; };
+		D5B2C0121C28CD61002705FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D5B2C0141C28CD6A002705FD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D5B2C0161C28CD73002705FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D5B2C0181C28CD83002705FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D5B2C01A1C28CD94002705FD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D5B2C01C1C28CDDB002705FD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D5B2C01E1C28CDE5002705FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D5B2C0201C28CDF0002705FD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D5B2C0221C28CDFB002705FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5B2C0241C28CE0B002705FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D5B2C0261C28CE24002705FD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D5F8478A1C1126C500E1CFCA /* TablePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F8478D1C1126C500E1CFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5F8478F1C1126C500E1CFCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5F847921C1126C500E1CFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5F847941C1126C500E1CFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5F847971C1126C500E1CFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5F847991C1126C500E1CFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F847A01C11349700E1CFCA /* Baseball copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Baseball copy.png"; sourceTree = "<group>"; };
+		DC0660EF3FBF256C6C952DC6 /* Pods-TablePay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablePay.release.xcconfig"; path = "Pods/Target Support Files/Pods-TablePay/Pods-TablePay.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5F847871C1126C500E1CFCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B2C0271C28CE24002705FD /* libsqlite3.tbd in Frameworks */,
+				D5B2C0251C28CE0B002705FD /* CoreLocation.framework in Frameworks */,
+				D5B2C0231C28CDFB002705FD /* CoreGraphics.framework in Frameworks */,
+				D5B2C0211C28CDF0002705FD /* CFNetwork.framework in Frameworks */,
+				D5B2C01F1C28CDE6002705FD /* AudioToolbox.framework in Frameworks */,
+				D5B2C01D1C28CDDB002705FD /* libz.tbd in Frameworks */,
+				D5B2C01B1C28CD94002705FD /* MobileCoreServices.framework in Frameworks */,
+				D5B2C0191C28CD83002705FD /* QuartzCore.framework in Frameworks */,
+				D5B2C0171C28CD73002705FD /* Security.framework in Frameworks */,
+				D5B2C0151C28CD6A002705FD /* StoreKit.framework in Frameworks */,
+				D5B2C0131C28CD61002705FD /* SystemConfiguration.framework in Frameworks */,
+				D5B2C00F1C28CCC4002705FD /* Parse.framework in Frameworks */,
+				D5B2C0111C28CCCF002705FD /* Bolts.framework in Frameworks */,
+				A263A93A6A4D75DCE89264F7 /* Pods_TablePay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		677BD7D6D7617B1730A940B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3273FC5C948D651BA696C /* Pods-TablePay.debug.xcconfig */,
+				DC0660EF3FBF256C6C952DC6 /* Pods-TablePay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5B2C0281C28CE88002705FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2C0241C28CE0B002705FD /* CoreLocation.framework */,
+				D5B2C0221C28CDFB002705FD /* CoreGraphics.framework */,
+				D5B2C0201C28CDF0002705FD /* CFNetwork.framework */,
+				D5B2C01E1C28CDE5002705FD /* AudioToolbox.framework */,
+				D5B2C01C1C28CDDB002705FD /* libz.tbd */,
+				D5B2C01A1C28CD94002705FD /* MobileCoreServices.framework */,
+				D5B2C0181C28CD83002705FD /* QuartzCore.framework */,
+				D5B2C0161C28CD73002705FD /* Security.framework */,
+				D5B2C0141C28CD6A002705FD /* StoreKit.framework */,
+				D5B2C0121C28CD61002705FD /* SystemConfiguration.framework */,
+				D5B2C0101C28CCCF002705FD /* Bolts.framework */,
+				D5B2C00E1C28CCC4002705FD /* Parse.framework */,
+				0D6064970C36FB2829FBEE3F /* Pods_TablePay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5F847811C1126C400E1CFCA = {
+			isa = PBXGroup;
+			children = (
+				D5B2C0261C28CE24002705FD /* libsqlite3.tbd */,
+				D5B2C0281C28CE88002705FD /* Frameworks */,
+				D5F8478C1C1126C500E1CFCA /* TablePay */,
+				D5F8478B1C1126C500E1CFCA /* Products */,
+				677BD7D6D7617B1730A940B5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D5F8478B1C1126C500E1CFCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5F8478A1C1126C500E1CFCA /* TablePay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5F8478C1C1126C500E1CFCA /* TablePay */ = {
+			isa = PBXGroup;
+			children = (
+				D5F847C41C1F8B9800E1CFCA /* Assets */,
+				D5F847941C1126C500E1CFCA /* Assets.xcassets */,
+				D5F847A01C11349700E1CFCA /* Baseball copy.png */,
+				D5F8478D1C1126C500E1CFCA /* AppDelegate.swift */,
+				D5F8478F1C1126C500E1CFCA /* ViewController.swift */,
+				D5F847911C1126C500E1CFCA /* Main.storyboard */,
+				D5F847961C1126C500E1CFCA /* LaunchScreen.storyboard */,
+				D5F847991C1126C500E1CFCA /* Info.plist */,
+			);
+			path = TablePay;
+			sourceTree = "<group>";
+		};
+		D5F847C41C1F8B9800E1CFCA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5F847891C1126C500E1CFCA /* TablePay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F8479C1C1126C500E1CFCA /* Build configuration list for PBXNativeTarget "TablePay" */;
+			buildPhases = (
+				1A0C4F4CFED20CCF0420A3CB /* Check Pods Manifest.lock */,
+				D5F847861C1126C500E1CFCA /* Sources */,
+				D5F847871C1126C500E1CFCA /* Frameworks */,
+				D5F847881C1126C500E1CFCA /* Resources */,
+				2013F40F2BB22374707D0B98 /* Embed Pods Frameworks */,
+				EC6AC17E85EC6896D083954F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TablePay;
+			productName = TablePay;
+			productReference = D5F8478A1C1126C500E1CFCA /* TablePay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5F847821C1126C400E1CFCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Fair, Josh";
+				TargetAttributes = {
+					D5F847891C1126C500E1CFCA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = D5F847851C1126C400E1CFCA /* Build configuration list for PBXProject "			" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5F847811C1126C400E1CFCA;
+			productRefGroup = D5F8478B1C1126C500E1CFCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5F847891C1126C500E1CFCA /* TablePay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5F847881C1126C500E1CFCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F847981C1126C500E1CFCA /* LaunchScreen.storyboard in Resources */,
+				D5F847A11C11349700E1CFCA /* Baseball copy.png in Resources */,
+				D5F847951C1126C500E1CFCA /* Assets.xcassets in Resources */,
+				D5F847931C1126C500E1CFCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0C4F4CFED20CCF0420A3CB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2013F40F2BB22374707D0B98 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TablePay/Pods-TablePay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6AC17E85EC6896D083954F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TablePay/Pods-TablePay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5F847861C1126C500E1CFCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F847901C1126C500E1CFCA /* ViewController.swift in Sources */,
+				D5F8478E1C1126C500E1CFCA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5F847911C1126C500E1CFCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F847921C1126C500E1CFCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5F847961C1126C500E1CFCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F847971C1126C500E1CFCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5F8479A1C1126C500E1CFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5F8479B1C1126C500E1CFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5F8479D1C1126C500E1CFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BA3273FC5C948D651BA696C /* Pods-TablePay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TablePay",
+				);
+				INFOPLIST_FILE = TablePay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "travagram.com-TablePay.TablePay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TablePay/TablePay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5F8479E1C1126C500E1CFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0660EF3FBF256C6C952DC6 /* Pods-TablePay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TablePay",
+				);
+				INFOPLIST_FILE = TablePay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "travagram.com-TablePay.TablePay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TablePay/TablePay-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5F847851C1126C400E1CFCA /* Build configuration list for PBXProject "			" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F8479A1C1126C500E1CFCA /* Debug */,
+				D5F8479B1C1126C500E1CFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F8479C1C1126C500E1CFCA /* Build configuration list for PBXNativeTarget "TablePay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F8479D1C1126C500E1CFCA /* Debug */,
+				D5F8479E1C1126C500E1CFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5F847821C1126C400E1CFCA /* Project object */;
+}

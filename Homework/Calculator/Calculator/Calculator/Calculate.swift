@@ -19,7 +19,7 @@ class Calculate {
     var multiply: Bool = false
     var subtract: Bool = false
     var add: Bool = false
-    //May need to add another for the direct computation without inpput ( example series 9 -> x -> = )
+    //May need to add another for the direcct computation without inpput ( example series 9 -> x -> = )
     
     
     // Turns information into text for display -> Scientific Notation, etc.
